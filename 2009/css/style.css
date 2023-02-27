@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, nav, article, section {
+  display:block;
+}
+
+body {
+  font: normal 16px/20px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+  padding: 0;
+  margin: 0;
+  background: #554D3F;
+}
+
+abbr {
+  border: 0;
+}
+
+a {
+  outline: 0;
+  color: #faab47;
+}
+
+p {
+  margin: 16px 0;
+}
+
+article section p {
+  margin-top: 0;
+}
+
+#page {
+  background: #29251f url(/images/body_bg.gif) repeat-y top right;
+  width: 960px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  width: 600px;
+  height: 100px;
+  float: left;
+}
+
+h1 {
+  margin-top: 0;
+  font: normal 40px/40px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#register {
+  background: #29251F;
+  float: right;
+  width: 320px;
+  padding: 20px 0;
+}
+
+#register a {
+  height: 100px;
+  text-indent: -9999px;
+  display: block;
+  background: url(/images/buy_now.gif) no-repeat right center;
+}
+
+a img {
+  border: 0;
+}
+
+article {
+  float: left;
+  width: 640px;
+}
+
+aside {
+  font: normal 12px/16px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+  float: right;
+  width: 320px;
+  min-height: 100%;
+}
+
+footer {
+  border-top: 1px solid #29251f;
+  font-size: 12px; /* not fibernachi :-( */
+  clear: both;
+  padding: 15px 20px;
+  background: #39342d;
+  color: #696763;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+footer a.image {
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#intro {
+  text-shadow: 1px 1px 1px #000;
+  font-style: italic;
+  margin: 0;
+  padding: 20px;
+  background: #39342d;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+#intro a {
+  text-decoration: none;
+}
+
+h2 {
+  font: normal 24px/40px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; 
+}
+
+article h2,
+article section {
+  margin: 20px;
+}
+
+article section {
+  clear: both;
+}
+
+article h3 {
+  color: #faab47;
+  font-weight: normal;
+  font: normal 24px/40px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; 
+}
+
+article h3 a {
+  text-decoration: none;
+}
+
+#speakers article section p, 
+#speakers article section h3,
+#speakers article section div p,
+#hotelSuggestions p,
+#hotelSuggestions h4,
+#location p,
+#location h4 {
+  margin-left: 90px;
+}
+
+article img {
+  margin-top: 10px;
+  margin-left: 0;
+  display: block;
+  float: left;
+  border: 3px solid #4c4842;
+}
+
+aside h3 {
+  padding-top: 8px;
+  color: #fff;
+  font: normal 16px/20px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+article h4 {
+  padding-top: 8px;
+  color: #faab47;
+  font: normal 16px/20px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;  
+}
+
+/* asides */
+aside p {
+  margin: 8px 0;
+}
+
+aside section {
+  padding: 20px;
+}
+
+#twitter {
+  position: relative;
+  background: #332f28 url(/images/twitter_top.gif) no-repeat top left;
+  padding: 0;
+  margin: 20px;
+  margin-right: 0;
+  padding-top: 16px;
+  min-height: 108px;
+}
+
+#twitter h2 {
+  display: none;
+}
+
+#twitter p.tweet {
+  font-style: italic;
+  background: #332f28 url(/images/twitter_middle.gif) repeat-y top left;
+  margin: 0;
+  padding: 0 50px 15px 20px;
+}
+
+#twitter p.tweet a.permalink {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter:alpha(opacity=50);
+}
+
+#twitter p.tweet a.permalink:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
+
+#twitter p.follow {
+  background: url(/images/twitter_bottom.gif) no-repeat left bottom;
+  margin: 0;
+  padding: 0 50px 20px 20px;  
+}
+
+#sponsors {
+  background: #39342d;
+}
+
+#furtherDetails {
+  background: #332f28;
+}
+
+#map {
+  height: 170px;
+  width: 280px;
+  padding: 20px 0;
+  
+}
+
+p.more {
+  margin-bottom: 8px;
+}
+
+aside p.more {
+  margin: 4px 0;
+}
+
+.more {
+  text-align: right;
+  font: normal 12px/16px Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+  background: url(/images/more_right.gif) no-repeat right center;
+  float: right;
+}
+
+.more a {
+  display: block;
+  line-height: 16px;
+  padding: 5px 0 5px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: url(/images/more_left.gif) no-repeat left center;
+/*  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -moz-border-radius-bottomleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;*/
+}
+
+.more a:hover {
+  text-decoration: underline;
+}
+
+aside .location {
+  clear: both;
+}
+
+aside .more {
+  background-image: url(/images/more_dark_right.gif);
+}
+
+aside .more a {
+  background-image: url(/images/more_dark_left.gif);
+}
+
+article section div {
+  clear: both;
+}
+
+article section div p {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+#details article section h3 {
+  margin-bottom: 16px;
+}
+
+#details ul {
+  list-style: none;
+}
+
+#hotelSuggestions li {
+  min-height: 86px;
+}
+
+#hotelSuggestions li img {
+  margin-top: 0;
+}
+
+#location img {
+  clear: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/*#location img {
+  float: right;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+*/
+/* heading image replacements */
+h1 a {
+  background: url(/images/title.gif) no-repeat;
+  outline: none;
+  display: block;
+  height: 66px;
+  text-indent: -9999px;
+}
+
+header h2 {
+  background: url(/images/javascript_conference.gif) no-repeat;
+  height: 25px;
+  text-indent: -9999px;  
+}
+
+article h2 {
+  height: 40px;
+  text-indent: -9999px;
+}
+
+#speakers article h2 {
+  background: url(/images/page_titles.gif) no-repeat 0 0;
+  width: 220px;
+}
+
+#terms article h2 {
+  background: url(/images/page_titles.gif) no-repeat -228px 0;
+  width: 355px;
+}
+
+#details article h2 {
+  background: url(/images/page_titles.gif) no-repeat -596px 0;
+  width: 305px;
+}
+
+#ticketdraw article h2,
+#speakers article #freeticket h2 {
+  background: url(/images/page_titles.gif) no-repeat -911px 0;
+  width: 355px;  
+}
+
+#sponsors {
+/*  display: none;*/
+}
+
+#sponsors h2 {
+  height: 40px;
+  background: url(/images/sponsors.gif) no-repeat 0 -6px;
+  text-indent: -9999px;  
+}
+
+#sponsors h2.media {
+  margin-top: 20px;
+  background: url(/images/media_partners.gif) no-repeat 0 -6px;
+}
+
+#sponsors a img,
+#sponsors img {
+  border: 0;
+}
+
+#sponsors a {
+  margin-bottom: 10px;
+/*  height: 50px;*/
+  display: block;
+}
+
+#sponsors div {
+  margin-bottom: 10px;
+}
+
+#sponsors div a {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* stupid reverse out */
+#sponsors p a {
+  height: auto;
+  display: inline;
+  margin-bottom: 0;
+}
+
+#furtherDetails h2 {
+  height: 40px;
+  background: url(/images/further_details.gif) no-repeat 0 -6px;
+  text-indent: -9999px;  
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+
+pre {
+  background: #433C30;
+  border: 1px solid #201D19;
+  color: #fefefe;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+#ticketdraw h4 {
+  margin-bottom: 14px;
+}
+
+figure {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 120px;
+  background: #4C4741;
+  padding: 5px;
+  float: right;
+}
+
+figure header {
+  height: auto; /* reversing out the style from earlier */
+  width: auto;
+  font-size: 80%;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  display: block;
+  float: none;
+}
+
+figure img {
+  margin: 0;
+  border: 0;
+}
+
+#speakers article #freeticket > * {
+  margin-left: 0px;
+}
+
+.js .talk {
+/*  display: none;*/
+}
+
+#speakers article section p.more {
+  margin-left: 10px;
+}
+
+#speakers article section.talk {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#speakers article section.talk h3 {
+  font-style: italic;
+}
+
+#latest {
+  font-style: italic;
+  background: #d3f4f0;
+  text-shadow: 0px 0px 1px #86A39F;
+  color: #2D3534;
+  text-align: center;
+  padding: 20px 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+body {
+  padding-top: 60px;
+}
+
+#latest p {
+  margin: 0;
+}
+
+#latest a {
+  color: #0A483F;
+  padding: 1px;
+  text-shadow: none;
+}
+
+#latest a:hover {
+  background-color: #0A483F;
+  color: #d3f4f0;
+  text-decoration: none;
+}

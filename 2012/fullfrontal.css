@@ -1,0 +1,1761 @@
+@font-face {
+  /* massive props to Patty Poos @patrick_h_lauke for his awesome old school fonts */
+  font-family: 'Xenon';
+  src: url('/fonts/xenon2-webfont.eot');
+  src: url('/fonts/xenon2-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/xenon2-webfont.woff') format('woff'),
+       url('/fonts/xenon2-webfont.ttf') format('truetype'),
+       url('/fonts/xenon2-webfont.svg#Xenon2Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  /* 8, 16, 64, 128 */
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0;
+  background-color: #262626;
+  background-image: url(/images/bg-alt.png);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+.ie {
+  min-width: 960px;
+}
+a {
+  color: #0eaf16;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+}
+small {
+  size: 15px;
+  color: #666;
+}
+hr {
+  clear: both;
+  margin: 60px 20px 30px 20px;
+  border-top: 2px solid #fff;
+}
+[hidden] {
+  display: none !important; 
+}
+
+a img {
+  border-color: black;
+}
+
+header {
+  position: relative;
+  font-family: Xenon;
+  background: #fff;
+  padding: 34px 0;
+  z-index: 1;
+  color: #000;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+header .ponch,
+header .chips {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+header .ponch {
+  background-image: url(/images/ledge.png);
+  background-position: right bottom;
+  background-repeat: repeat-x;
+  right: 10%;
+
+}
+header .chips {
+  background-image: url(/images/chip.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  left: 90%;
+}
+header .wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+}
+header .wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+header .logo {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  font-size: 32px;
+  line-height: 22px;
+  margin-bottom: 34px;
+}
+nav a:hover,
+nav a:focus {
+  color: #000;
+}
+.noJS #show-menu {
+  display: none;
+}
+#show-menu {
+  display: block;
+  margin: 34px 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 15px;
+  color: #909090;
+
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -o-font-smoothing: auto;
+  font-smoothing: auto;
+}
+
+#locations h3,
+#sponsors h3,
+.lede,
+.blurb p,
+#pullout li {
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -o-font-smoothing: auto;
+  font-smoothing: auto;
+}
+
+.button {
+  display: block;
+  padding: 12px 18px;
+  border: 2px solid #000;
+  background-color: #0eaf16;
+  color: #fff;
+  font-family: Xenon;
+  font-size: 16px;
+  text-align: left;
+  text-shadow: 1px 1px 0 #000;
+
+  -webkit-box-shadow: 4px 6px 0 #000;
+  -moz-box-shadow: 4px 6px 0 #000;
+  -o-box-shadow: 4px 6px 0 #000;
+  -ms-box-shadow: 4px 6px 0 #000;
+  box-shadow: 4px 6px 0 #000;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+.button:hover,
+.button:focus {
+  background-color: #000;
+  border: 2px solid #fff;
+}
+.button-white {
+  background: #fff;
+  color: #000;
+}
+
+.buy-tickets {
+  margin: 34px;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000;
+}
+.price {
+  display: none;
+}
+
+footer {
+  margin: 60px auto;
+  text-align: center;
+  clear: both;
+}
+footer .previous {
+   font-family: Xenon;
+   line-height: 19px; 
+   margin-bottom: 30px;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none; 
+}
+footer .date-twitter {
+  font-family: Xenon;
+  font-size: 64px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #000;
+  margin-top: 40px;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+footer .date {
+  display: block;
+  color: #fff;
+  line-height: 41px;
+}
+footer .date span {
+  color: #c0c0c0;
+}
+footer .twitter {
+  display: block;
+  font-size: 32px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+footer .left-logic {
+  display: block;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 227px;
+  height: 47px;
+  background-image: url(/images/leftlogic.png);
+/*  background-image: -webkit-cross-fade(url(/images/leftlogic-1.png),  url(/images/leftlogic-2.png), 0%);
+
+  -webkit-transition: background-image 100ms ease-in-out;
+  -moz-transition: background-image 100ms ease-in-out;
+  -o-transition: background-image 100ms ease-in-out;
+  -ms-transition: background-image 100ms ease-in-out;
+  transition: background-image 100ms ease-in-out;*/
+}
+footer .left-logic:hover,
+footer .left-logic:focus,
+footer .left-logic:active {
+  background-position: bottom;
+/*  background-image: -webkit-cross-fade(url(/images/leftlogic-1.png),  url(/images/leftlogic-2.png), 100%);*/
+}
+
+.main {
+  background-image: url(/images/grad.png);
+  background-repeat: repeat-x;
+  padding: 0;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+.main .wrapper {
+  margin: 0 auto;  
+  max-width: 1400px;
+}
+
+.wrapper > article > *,
+.lede {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lede {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+  color: #c0c0c0;
+}
+.lede strong {
+  color: #fff;
+}
+.lede br {
+  display: none;
+}
+
+article {
+  overflow: hidden;
+  padding-top: 30px;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: Xenon;
+  font-size: 64px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+
+  /* heading aligment tweaks */
+  position: relative;
+  left: 4px;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+#locations h2,
+#workshops h2 {
+  padding: 0;
+}
+
+/* Schedule */
+.schedule {
+  margin: 0;
+  padding: 0;
+}
+.schedule li {
+  list-style-type: none;
+  margin-bottom: 30px;
+  font-family: Xenon;
+  font-size: 32px;
+  text-align: left;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+.schedule-heading {
+  display: none;
+}
+.schedule .time,
+.schedule .done {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.schedule .done,
+.schedule .next {
+  display: none;
+}
+.schedule .summary {
+  line-height: 28px;
+  display: block;
+}
+
+.schedule .finished,
+.schedule .finished a {
+  color: #606060;
+}
+.schedule .finished a:hover,
+.schedule .finished a:focus {
+  color: #fff;
+}
+.schedule .current {
+  background: #0eaf16;
+  color: #fff;
+  margin: 20px -20px;
+  padding: 10px 20px;
+}
+.schedule .current a {
+  color: #fff;
+}
+.schedule .current a:hover,
+.schedule .current a:focus {
+  color: #000;
+}
+
+
+/* Speaker / Workshop */
+.speaker,
+.workshop,
+.fringe {
+  margin-bottom: 30px;
+}
+.speaker h3,
+.workshop h3,
+.fringe h3 {
+  font-family: Xenon;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 14px;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+.speaker h3 a,
+.workshop h3 a,
+.fringe h3 a {
+  display: block;
+  margin-top: 10px;
+  font-size: 32px;
+}
+.workshop h3 a,
+.fringe h3 a {
+  line-height: 30px;
+}
+.speaker .details,
+.workshop .sold-out {
+  /*display: none;*/
+}
+.sold-out .button {
+  background-color: #c00;
+}
+.details img {
+  display: none;
+}
+.workshop p,
+.fringe p,
+.speaker p {
+  margin: 20px 0;
+  font-size: 15px;
+  color: #c0c0c0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.workshop {
+  position: relative;
+}
+
+/* Locations */
+.locations h3 {
+  font-size: 32px;
+  font-weight: 100;
+  color: #c0c0c0;
+  text-align: center;
+}
+.locations ul {
+  margin: 0;
+  padding: 0;
+}
+.venue {
+  list-style-type: none;
+  margin-bottom: 30px;
+  font-family: Xenon;
+  font-size: 32px;
+  text-align: center;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+.venue .name {
+  line-height: 28px;
+}
+.venue .address {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.venue a {
+  line-height: 30px;
+  display: block;
+}
+.venue .details {
+  display: none;
+}
+
+#map,
+#locations span.bullet {
+  display: none;
+}
+
+/* Sponsors */
+.sponsor {
+  display: block;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  padding: 0;
+
+/*  max-width: 280px;
+  float: left;
+  box-sizing: border-box;*/
+}
+.sponsor img {
+  width: 100%;
+  border-width: 0;
+}
+#sponsors h3 {
+  display: none;
+}
+
+.full-monty {
+  /*margin: 0 20px 30px 20px;*/
+  background-color: #fff;
+  color: #303030;
+  font-weight: normal;
+  margin: 20px;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+.wrapper > article .full-monty {
+  padding: 40px;
+}
+.full-monty .sponsor {
+  float: none;
+  /*width: 60%;*/
+  display: block;
+  margin: 0 auto;
+}
+.full-monty .sponsor img {
+  width: 100%;
+}
+.full-monty .blurb {
+  display: none;
+}
+
+article > .full-monty-wrapper {
+  padding: 0;
+}
+
+/** Pullout **/
+body.pullout {
+  background-image: none;
+  background-color: #fff;
+}
+#pullout-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 55;
+}
+#pullout {
+  padding: 20px;
+  background: #fff;
+  color: #606060;
+  margin: 0 auto;
+  position: relative;
+}
+#pullout .pullout-controls:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#pullout h1 {
+  clear: both;
+  margin: 30px 0;
+  font-family: Xenon;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000;
+
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+}
+#pullout h1 .twitter {
+  font-size: 16px;
+  line-height: 16px; 
+}
+#pullout hr {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  margin: 30px 0;
+}
+#pullout img {
+  width: 100%;
+}
+#pullout h2 {
+  margin: 40px 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: left;
+  color: #000;
+
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -o-font-smoothing: auto;
+  font-smoothing: auto;
+}
+#pullout h3,
+#pullout p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+}
+#pullout h3 {
+  color: #000;
+  font-weight: bold;
+}
+#pullout section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  /*margin-bottom: 5px;*/
+}
+#pullout section h2 {
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+#pullout ul {
+  margin: 0;
+  padding: 0;
+}
+#pullout li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+#pullout li:last-child {
+  margin-bottom: 0;
+}
+#pullout a {
+  font-weight: bold;
+}
+#pullout a:hover,
+#pullout a:focus {
+  color: #000;
+}
+#pullout .talk-buttons {
+  clear: both;
+}
+
+/** Pullout Buttons **/
+#pullout .button {
+  display: inline-block;
+  margin: 10px 0;
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+#pullout .button:hover,
+#pullout .button:focus {
+  color: #fff;
+}
+#pullout .pullout-close {
+ float: left;
+ padding-left: 40px;
+ background-image: url('/images/close.gif'); 
+}
+#pullout .pullout-prev-next {
+  margin: 10px 0;
+  float: right;
+
+  -webkit-box-shadow: 4px 6px 0 #000;
+  -moz-box-shadow: 4px 6px 0 #000;
+  -o-box-shadow: 4px 6px 0 #000;
+  -ms-box-shadow: 4px 6px 0 #000;
+  box-shadow: 4px 6px 0 #000;
+}
+#pullout .pullout-prev,
+#pullout .pullout-next {
+  margin: 0;
+  background-position: 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+  float: left;
+  min-height: 10px;
+}
+#pullout .pullout-prev span,
+#pullout .pullout-next span {
+  display: none;
+}
+#pullout .pullout-prev {
+  background-image: url('/images/prev.gif');
+}
+#pullout .pullout-next {
+  background-image: url('/images/next.gif');
+}
+#pullout .pullout-prev:hover,
+#pullout .pullout-prev:focus {  
+  background-image: url('/images/prev-alt.gif');
+}
+#pullout .pullout-next:hover,
+#pullout .pullout-next:focus {
+  background-image: url('/images/next-alt.gif');
+}
+#pullout .talk-listen,
+#pullout .talk-download {
+  padding-left: 40px;
+  line-height: 16px;
+  margin-right: 20px;
+}
+#pullout .talk-listen {
+  background-image: url('/images/listen.gif');
+}
+#pullout .talk-download {
+  background-image: url('/images/download.gif');
+}
+#pullout .talk-listen:hover,
+#pullout .talk-listen:focus {
+  background-image: url('/images/listen-alt.gif');
+}
+#pullout .talk-download:hover,
+#pullout .talk-download:focus {
+  background-image: url('/images/download-alt.gif');
+}
+#pullout .ticket {
+  margin-bottom: 20px;
+}
+#pullout.is-workshop .ticket {
+  padding-top: 0;
+}
+#pullout.tickets h1 {
+  float: none;
+  font-size: 64px;
+  line-height: 43px;
+}
+#pullout.tickets .tickets-price {
+  white-space: nowrap;
+}
+#pullout.tickets .pound-alt {
+  width: auto;
+  padding-right: 10px
+}
+#pullout .ticket .buy-box {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+#pullout .ticket h2 {
+  margin: 10px 0;
+}
+#pullout .ticket .buy-box h4 {
+  font-size: 32px;
+  margin: 0;
+}
+#pullout .ticket .buy-box p {
+  margin: 0;
+}
+#pullout .ticket .buy-box .text {
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding-top: 20px;
+}
+#pullout .ticket .button {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+#pullout .ticket .sold-out {
+  background-color: #c00;
+}
+#pullout .ticket .sold-out:hover,
+#pullout .ticket .sold-out:focus, {
+  background-color: #c00;
+  border: 1px solid #000;
+}
+#pullout .ticket .more {
+  text-align: center;
+}
+#pullout.tickets small {
+  display: block;
+  clear: both;
+  font-size: 15px;
+  font-weight: normal;
+  color: #909090;
+}
+
+.is-workshop hr {
+  display: none;
+}
+
+.yeahpointlessiknow {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .lede .extra-br {
+    /*display: inline;*/
+  }
+}
+
+/*@media screen and (min-width: 691px) {
+  .lede .superflous-br {
+    display: inline;
+  }
+
+  .lede br { 
+    display: inline; 
+  }
+}
+*/
+@media screen and (max-width: 550px) {
+  #pullout .buy-box, #pullout .buy-box .text, #pullout .buy-box .button {
+    width: auto;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background-image: url(/images/bg.png);
+  }
+
+  #dressing-gown.blur {
+    -webkit-filter: blur(3px);
+  }
+
+  .yeahpointlessiknow {
+    display: block;
+  }
+
+  footer .date {
+    font-size: 128px;
+    line-height: 80px;
+  }
+
+  footer .date-twitter a {
+    font-size: 64px;
+  }
+
+  .wrapper > hr {
+    display: none;
+  }
+
+  .wrapper > article > h2 {
+    margin: 60px 50px 60px 40px;
+    font-size: 64px;
+    line-height: 0;
+    position: relative;
+    border-top: 10px solid #fff;
+  }
+
+  .wrapper > article > h2 span {
+    z-index: 2;
+    color: #fff;
+    background: url(/images/bg-heading.png) repeat-x 0 0;
+    padding: 0 50px 0 60px; /* because the font actually has 10px of blank space on the side */
+  }
+
+  .wrapper > article > h2 span:before,
+  .wrapper > article > h2 span:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: url(/images/head-box.png) no-repeat center;
+    top: 0;
+    left: 0;
+    margin: -20px 0 0 0;
+    width: 30px;
+    height: 30px;
+    margin-left: -30px;
+  }
+
+  .wrapper > article > h2 span:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -30px;
+  }
+
+  .lede {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .lede .superflous-br {
+    display: inline;
+  }
+
+  .schedule-half {
+    float: left;
+    width: 50%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  .schedule {
+    float: left;
+    width: 100%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+  .schedule .schedule-heading {
+    display: list-item;
+  }
+  .schedule .schedule-heading h3 {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -o-font-smoothing: auto;
+    font-smoothing: auto;
+  }
+  .schedule .current {
+    width: auto;
+    margin: -10px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  .speaker,
+  .workshop {
+    float: left;
+    width: 50%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  .speaker .details,
+  .workshop .details {
+    position: relative;
+    display: block;
+  }
+  [data-href] {
+    cursor: pointer;
+  }
+  .speaker img,
+  .workshop .details img {
+    image-rendering:-moz-crisp-edges; 
+    image-rendering: -o-crisp-edges; 
+    image-rendering:-webkit-optimize-contrast; 
+    -ms-interpolation-mode:nearest-neighbor;
+
+    display: block;
+    width: 100%;
+    border: 2px solid #000 !important; /* oddly the link wrapping this img is putting a green border on the image */  
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 2px 2px 0 #000;
+    -moz-box-shadow: 2px 2px 0 #000;
+    -o-box-shadow: 2px 2px 0 #000;
+    -ms-box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 #000;
+  }
+  .speaker .blurb,
+  .workshop .blurb,
+  .workshop .sold-out {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    -webkit-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+    -ms-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+  }
+  .speaker .details:hover .blurb,
+  .workshop .details:hover .blurb,
+  .workshop .sold-out {
+    opacity: 1;
+  }
+  .speaker .details .blurb p,
+  .workshop .details .blurb p {
+    padding: 20px;
+    text-align: center;
+  }
+  .workshop h3 {
+    white-space: nowrap;
+  }
+  .workshop .sold-out {
+    background-color: transparent;
+  }
+  .sold-out .button {
+    display: inline-block;
+    background-color: #c00;
+    font-size: 32px;
+
+    -webkit-transition: background-color 100ms ease-in-out;
+    -moz-transition: background-color 100ms ease-in-out;
+    -o-transition: background-color 100ms ease-in-out;
+    -ms-transition: background-color 100ms ease-in-out;
+    transition: background-color 100ms ease-in-out;
+  }
+  .workshop .details:hover .sold-out .button {
+    background-color: #000;
+  }
+
+  .locations {
+    float: left;
+    width: 25%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  .wrapper > article > .locations {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .venue .bullet {
+    color: #606060;
+  }
+  .venue.selected .bullet {
+    color: #fff;
+  }
+  .venue .details {
+    display: block;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #c0c0c0;
+
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -o-font-smoothing: auto;
+    font-smoothing: auto;
+  }
+  .venue .details p:first-of-type {
+    margin-top: 5px;
+  }
+  #map {
+    display: block;
+    float: left;
+    width: 50%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    background: #333;
+    /*height: 80vh;*/
+    height: 1040px;
+    border: 2px solid #fff;
+  }
+
+  #sponsors h3 {
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+    color: #c0c0c0;
+    margin-bottom: 60px;
+    clear: both;
+  }
+  .sponsor {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 60px 1.5%;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+  .full-monty {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 0px 1.5%;
+    background-color: #fff;
+    color: #303030;
+    font-weight: normal;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  .wrapper > article > .full-monty {
+    padding: 40px;
+  }
+  .full-monty .sponsor {
+    float: none;
+    width: 100%;
+    max-width: 360px;
+    display: block;
+    margin: 0 auto;
+  }
+  .full-monty .sponsor img {
+    width: 100%;
+  }
+  .full-monty .blurb {
+    display: block;
+    padding-bottom: 16px;
+  }
+
+  .full-monty-wrapper {
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+
+  .full-monty {
+    padding-bottom: 999999px !important;
+    margin-bottom: -999999px !important;
+  }
+
+
+  #pullout { 
+    width: 80%;
+    max-width: 780px;
+    z-index: 100;
+    overflow: visible;
+    padding: 40px;
+  }
+  #pullout.is-workshop{ 
+    max-width: 1080px;
+  }
+
+
+  /** Additional Pullout Style from Paul **/
+  #pullout h1 {
+    font-size: 64px;
+    line-height: 43px;
+    float: left;
+    margin: 10px 0 20px 0;
+  }
+  #pullout h1 .twitter {
+  font-size: 32px;
+  line-height: 32px; 
+}
+  #pullout h2 {
+    margin-bottom: 30px;
+  }
+  #pullout hr {
+    margin-top: 15px;
+    margin-bottom: -10px;
+    clear: both;
+  }
+  #pullout .speaker-image {
+    /*max-width: 156px;*/
+    max-width: 250px;
+    float: right;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  #pullout .buy-box {
+    overflow: hidden;
+    width: 520px;
+    float: right;
+  }
+  #pullout .buy-box .text {
+    float: left;
+    text-align: right;
+    width: 280px;
+    padding-top: 0;
+  }
+  #pullout.is-workshop .ticket .buy-box .text {
+    padding-top: 0;
+  }
+  #pullout .buy-box h4, #pullout .buy-box p {
+    margin: 0;
+  }
+  #pullout .buy-box p {
+    margin-top: -4px;
+  }
+  #pullout .buy-box h4 {
+    font-size: 32px;
+  }
+  #pullout .buy-box h4 span {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  #pullout .buy-box .button {
+    font-size: 32px;
+    font-weight: normal;
+    float: right;
+    margin-top: 0;
+  }
+
+  #pullout .pullout-close {
+    position: absolute;
+    right: -24px;
+    top: -32px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 0;
+    background-position: center;
+  }
+
+  .pullout #pullout .pullout-close {
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  #pullout .pullout-close span {
+    display: none;
+  }
+  #pullout .pullout-prev-next {
+    display: none;
+  }
+
+  #pullout.is-workshop
+
+  #pullout .talk-download {
+    margin-left: 20px;
+  }
+
+  #pullout .ticket {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+  /* mass reverse out for tickets on workshop wide */
+   #pullout.is-workshop .ticket {
+    background: none;
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+
+  #pullout.is-workshop .ticket .buy-box {
+    width: 520px;
+    float: right;
+  }
+
+  #pullout.is-workshop .ticket .buy-box .text {
+    width: 280px;
+    float: left;
+    text-align: right;
+  }
+
+  .is-workshop hr {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 692px) {
+  .lede .extra-br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  header nav li.tickets {
+    display: none;
+  }
+
+
+  .lede .superflous-br {
+    display: inline;
+  }
+
+  .lede br { 
+    display: inline; 
+  }
+
+  #show-menu {
+    display: none;
+  }
+
+  header .logo {
+    float: left;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  
+  header h1 {
+    display: none;
+  }
+
+  header .wrapper {
+    margin-bottom: 0;
+  }
+  nav {
+    position: absolute;
+    width: 400px;
+    right: 200px;
+    bottom: auto;
+  }
+  nav li {
+    float: left;
+    width: 200px;
+    text-align: left;
+  }
+
+  .buy-tickets {
+    float: right;
+    margin-top: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  header .buy-tickets {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .buy {
+    /*display: none;*/
+    display: block;
+  }
+  .price {
+    display: block;
+    margin-top: 20px;
+    font-size: 64px;
+  }
+
+  .lede .superflous-br {
+    display: none;
+  }
+
+  .sponsor img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 954px) {
+
+  .sponsor.half {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    width: 30%;
+  }
+  
+  header .wrapper {
+    margin-bottom: 20px;
+  }
+  header .logo {
+    float: left;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  header h1 {
+    float: left;
+    display: block;
+    margin: 0;
+    color: #bfbfbf;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 82px;
+  }
+  header time {
+    display: block;
+    font-size: 128px;
+  }
+  header h1 span {
+    display: block;
+    width: 507px;
+    margin-top: 8px;
+    letter-spacing: -3px;
+    text-align: justify;
+    line-height: 40px;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: -53px;
+  }
+  nav li {
+    float: left;
+    /*width: 16.66667%; TODO: When Schedule Present */
+    width: 20%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .speaker,
+  .workshop {
+    float: left;
+    width: 33.3333%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+  #locations span.bullet {
+    display: inline;
+  }
+
+  .workshop > h3,
+  .workshop > div {
+    width: 100%;
+  }
+
+  #pullout .left {
+    width: 48%;
+    float: left;
+  }
+  #pullout .right {
+    width: 48%;
+    float: right;
+    overflow: hidden;
+    background: #f2f2f2;
+    margin-top: 47px;
+  }
+  #pullout .right section {
+    width: 50%;
+    float: left;
+    /*margin-top: 47px;*/
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  #pullout .right section:nth-child(1) {
+    border-right: 2px solid #fff;
+  } 
+}
+
+@media screen and (min-width: 984px) {
+  .sponsor {
+    width: 30%;
+    margin: 0 1.5% 60px 1.5%;
+  }
+  .schedule {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1234px) and (min-width: 640px) {
+  .locations {
+    width: 33.3333%;
+  }
+  #map {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 640px) {
+  .locations {
+    width: 50%;
+  }
+  #map {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  header .wrapper {
+    margin-bottom: 0;
+  }
+  nav {
+    position: absolute;
+    width: 400px;
+    right: 200px;
+    bottom: auto;
+  }
+  nav li {
+    float: left;
+    width: 200px;
+    text-align: left;
+  }
+  .speaker {
+    width: 25%;
+  }
+  .workshop {
+    width: 33%;
+  }
+
+  .workshop > h3, 
+  .workshop > div {
+    /*width: 73.5%;*/
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sponsor {
+    width: 22%;
+    margin: 0 1.5% 60px 1.5%;
+  }
+}
+
+#dummy header {
+  position: relative;
+  font-family: Xenon;
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  z-index: 1;
+  color: #000;
+}
+#dummy header .ponch,
+#dummy header .chips {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+#dummy header .ponch {
+  background-image: url(/images/ledge.png);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  left: 55%;
+
+}
+#dummy header .chips {
+  background-image: url(/images/chip.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  right: 45%;
+}
+#dummy header .wrapper {
+  max-width: 778px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#dummy header p {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 10px;
+}
+#dummy header .logo {
+  float: left;
+  margin-top: 35px;
+  margin: 35px 0 0 0;
+}
+#dummy #countdown {
+  display: block;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  color: #bfbfbf;
+}
+#dummy #countdown div {
+  float: left;
+  max-width: 120px;
+  margin-right: 40px;
+}
+#dummy #countdown .secs{
+  margin-right: 0;
+}
+#dummy #countdown .value {
+  display: block;
+  margin-bottom: 7px; /* Should be 10px - logo a little too small */
+  padding-left: 4px;
+  font-size: 128px;
+  line-height: 85px;
+  text-align: center;
+}
+#dummy #countdown .label {
+  display: block;
+  font-size: 64px;
+  line-height: 39px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#dummy .tabs {
+  position: relative;
+  padding-top: 241px;
+}
+
+#dummy .tab {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  display: block;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center -170px;
+  z-index: 10;
+}
+#dummy .tab-sponsor .tab {
+  background-image: url(/images/dummy/t-sponsor.png);
+  right: 0;
+}
+#dummy .tab-talk .tab {
+  background-image: url(/images/dummy/t-talk.png);
+  left: 35%;
+}
+.tab-register .tab {
+  background-image: url(/images/dummy/t-register.png);
+  left: 0;
+}
+
+#dummy .tab h2 {
+  font-family: Xenon;
+  -webkit-font-smoothing: none;
+  -moz-font-smoothing: none;
+  -o-font-smoothing: none;
+  font-smoothing: none;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding: 15px 10px;
+  margin-top: 170px;
+  margin-bottom: 0;
+  line-height: 20px;
+  background-color: #00af3b;
+  border: 2px solid #000;
+  color: #87d78b;
+}
+
+#dummy .tab-sponsor .tab h2 br {
+  display: none;
+}
+
+#dummy .tab:hover {
+  cursor: pointer;
+  background-position: center top;
+}
+#dummy .tab:hover h2 {
+  color: #fff;
+}
+
+#dummy .tab-content .wrapper {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  margin-top: -19px;
+  padding: 35px 45px;
+  font-size: 25px;
+}
+#dummy .tab-content .tab-hidden {
+  display: none;
+}
+#dummy .tab-content .wrapper a {
+  font-weight: normal;
+}
+#dummy .tab-content .wrapper a:hover {
+  text-decoration: underline;
+  color: #00af3b;
+}
+
+#dummy .main {
+  background-image: url(/images/grad.png);
+  background-repeat: repeat-x;
+  padding-top: 85px;
+}
+#dummy .main .wrapper {
+  max-width: 960px;
+  margin: 0 auto;  
+}
+
+
+#dummy {
+  padding-bottom: 2000px;
+}
+
+html.dummy {
+  overflow: hidden;
+}
+
+body.dummy {
+  opacity: 0;
+  /*-webkit-transition: opacity 200ms linear;*/
+}
+
+.nojs body,
+body.ready {
+  opacity: 1;
+}
+
+@media screen and (max-width: 870px) {
+  #dummy .lede br {
+    display: none;
+  }
+}
+@media screen and (max-width: 970px) {
+  #dummy .lede,
+  #dummy .tabs {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #dummy header .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #dummy #countdown {
+    float: none;
+    margin: 0 auto;
+    width: 580px;
+  }
+  #dummy #countdown div {
+    margin: 14px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 759px) {
+  #dummy .tab-sponsor .tab h2 br {
+    display: inline;
+  }
+  #dummy .tab-content .wrapper {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #dummy header {
+    padding-bottom: 34px;
+  }
+  #dummy header .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #dummy #countdown {
+    float: none;
+    margin: 0 auto;
+    width: 320px;
+  }
+  #dummy #countdown div {
+    margin: 6px;
+  }
+  #dummy #countdown .value {
+    font-size: 64px;
+    line-height: 28px;
+  }
+  #dummy #countdown .label {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  #dummy .main {
+    padding-top: 55px;
+  }
+  #dummy .lede {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #dummy .tabs {
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  #dummy .tab {
+    position: static;
+    width: 100%;
+    display: block;
+    background-image: none;
+  }
+}

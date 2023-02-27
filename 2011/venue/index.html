@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html id="venue">
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+  <!-- TODO should this be max-width? -->
+  <meta name=viewport content="width=max-width, initial-scale=1.0">
+  <title>Full Frontal 2011- JavaScript Conference</title>
+  <script>document.documentElement.className = 'js';</script>
+  <link rel=stylesheet href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' /> 
+  <link rel=stylesheet href=fullfrontal.css?20110928>
+  <link rel=stylesheet href=queries.css?20110928>
+  
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<!--[if lte IE 8]><body class="ie nomediaquerygoodnessyepisuck"><![endif]-->
+<!--[if gt IE 8]><!--><body><!--<![endif]-->
+  <div class=wrapper>
+    <header>
+      <h1 class=full-frontal>Full Frontal</h1> 
+      
+      <hgroup>
+        <h2>JavaScript <br> <span>Conference</span></h2>
+        <h3>Duke Of Yorks, Brighton, <br> <time datetime=2011-11-11T09:00:00Z>11th November 2011</time></h3>
+      </hgroup>
+    
+      <!-- <a href=/tickets class="buy-tickets early-bird">
+        <span class=tickets-wrapper>
+          <span class=type>Earlybird</span>
+          <span class=price>1 day &pound;99+<abbr>VAT</abbr></span>
+        </span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      </a>-->
+      
+      
+      <!-- <a href=/tickets class="buy-tickets buy-now">
+        <span class=tickets-wrapper>
+        <span class=type>Buy Now</span>
+        <span class=price>1 day &pound;129+ <abbr>VAT</abbr></span>
+        </span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      </a> -->
+
+      <!--<a href=/tickets class="buy-tickets workshops-only">
+        <span class=tickets-wrapper>
+        <span class=type>Sold out</span>
+        <span class=price>Workshops available</span>
+        </span>
+        <span class=buy-button><img src=images/buy-tickets.png width=278 height=48 alt="Buy Tickets"></span>
+      </a>-->
+            
+      <span class="buy-tickets sold-out">Sold Out!</span>
+      
+           
+    </header>
+    <nav>
+      <ul>
+        <li><a href=/>Home</a>
+        <li><a href=/speakers>Speakers</a>
+        <li><a href=/schedule>Schedule</a>
+        <li><a href=/workshops>Workshops</a>
+        <li><a class=selected href=/venue>The Venue</a>
+        <li><a href=/sponsors>Sponsors</a>
+      </ul>
+      <div class=clear></div>
+    </nav>
+    <h1 class=headline><img src=/images/headlines/the-venue.png alt="Venue Details"></h1>
+<section class=venue>
+  
+  <div class=details>
+    <h2>
+      <span class=line-1>Duke</span>
+      <span class=line-2>of York's</span>
+      <span class=line-3>Picturehouse</span><br>
+      <span class=line-4>Preston Circus, Brighton, BN1 4NA</span><br>
+      <span class=line-5>+44 (0)871 902 5728</span>
+    </h2>
+
+    <p>
+      Full Frontal Javascript Conference is being held at the historic 
+      <a href=#>Duke of York's Picturehouse</a> in Brighton. It is centrally located on
+      Preston Circus, less than 15 minutes walk from Brighton train station.
+      Trains run regularly from Gatwick Airport, London Bridge and London Victoria
+      station.
+  </div>
+  
+  <img src=images/venue.jpg>
+  
+</section>
+
+<section class=associated-venues id=associated-venues>
+  <div class=details>
+    
+    <h2>Hotels</h2>
+    <ul>
+      <li data-latlng=50.831386981520524,-0.14038681983947754><span class=venue-1>1</span>
+          <div>
+            <h3><a href=http://brightonhotels.jurysinns.com>Jury's Inn'</a> £112*</h3>
+            <p>
+              101 Stroundly Road, BN1 4DJ<br>
+              <small>* 2 nights online special, £129 also includes breakfast</small>
+          </div>
+          
+      <li data-latlng=50.83632670343803,-0.1439809799194336><span class=venue-2>2</span>
+          <div>
+            <h3><a href=http://www.travelodge.co.uk/hotels/info?hotelId=18>Travelodge</a> £38</h3>
+            <p>
+              165-167 Preston Road, BN1 6AU<br>
+          </div>
+          
+      <li data-latlng=50.82469821215884,-0.13905644416809082><span class=venue-3>3</span>
+          <div>
+            <h3><a href=http://www.myhotels.com/my-hotel-brighton/index.html>My Hotel</a> £95, £99*</h3>
+            <p>
+              17 Jubilee St, BN1 1GE<br>
+              <small>* £95 for Thurs, £99 for Fri</small>
+          </div>
+          
+      <li data-latlng=50.82025883414183,-0.14247357845306396><span class=venue-4>4</span>
+          <div>
+            <h3><a href=http://www.barcelo-hotels.co.uk/hotels/southern-england/barcelo-brighton-old-ship-hotel>Old Ship hotel</a> £63/£73*</h3>
+            <p>
+              King's Road, BN1 1NR<br>
+              <small>* £73 includes breakfast</small>
+          </div>
+    </ul>
+
+    <h2>Food</h2>
+    <ul class=food>
+      <li data-latlng=50.833900951968864,-0.1390671730041504><span class=venue-5>5</span>
+          <div>
+            <h3>Circus Circus <em>Pub</em></h3>
+            <p>101 Stroundly Road, BN1 4DJ
+          </div>
+          
+      <li data-latlng=50.83730916466705,-0.13620257377624512 data-it=6><span class=venue-6>6</span>
+          <div>
+            <h3>The Open House <em>Pub</em></h3>
+            <p>165-167 Preston Road, BN1 6AU
+          </div>
+          
+      <li data-latlng=50.831969746834076,-0.13464689254760742><span class=venue-7>7</span>
+          <div>
+            <h3>Bardsley's' <em>Fish &amp; Chips</em></h3>
+            <p>17 Jubilee Sreet, BN1 1GE
+          </div>
+          
+      <li data-latlng=50.831874878557926,-0.13535499572753906><span class=venue-8>8</span>
+          <div>
+            <h3>Mitre Tavern <em>Pub</em></h3>
+            <p>Kings Road, BN1 2GS
+          </div>
+      
+      <li data-latlng=50.83406696411911,-0.13850659132003784><span class=venue-9>9</span>
+          <div>
+            <h3>Mediterrane <em>Pub</em></h3>
+            <p>Next to Duke of York's
+          </div>
+    </ul>
+
+    <h2>After Party</h2>
+    <ul class=party>
+      <li data-latlng=50.82181097001707,-0.14180302619934082>
+        <div>
+        <h3>The Loft</h3>
+        <p>Please join us at the Full Frontal After Party at The Loft from 7pm until late &mdash; where Mozilla and BlackBerry, our Full Monty sponsors have bought you a pint!
+    </ul>
+  </div>
+      
+  <div id=venue-map></div>
+  
+</section>
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
+</div><!-- .wrapper -->
+
+<footer>
+  <div class=fat-footer>
+    <div class=wrapper>
+    <section class=updates>
+      <h1>Tweets &amp; Updates</h1>
+      <div id=updates><!-- js hook --></div>
+      <a class=follow href=https://twitter.com/fullfrontalconf>
+        <img src=/images/follow.png alt="Follow @FullFrontalConf">
+      </a>
+    </section>
+  
+    <section class=sponsors>
+      <h1>Proudly Sponsored By...</h1>
+      <a class=large href=http://www.mozilla.org><img src=/images/sponsors/mozilla.gif alt="Mozilla - Building a better internet, and dedicated to keeping it free, open and accessible to all" width=264></a> <a class=large href=http://www.blackberry.com/developers><img src=/images/sponsors/blackberry.gif alt="The BlackBerry Developer Zone is the central place for developers to get tools, resources and information to develop for the BlackBerry Application Platform" width=264></a>      <br>
+      <a class=half href=http://www.webappuk.com/><img src=/images/sponsors/webappsuk.gif alt="Web Applications UK"></a>
+      <a class=half href=http://www.kendoui.com/><img src=/images/sponsors/kendo-ui.gif alt="Setting the New Standard for HTML5 UI"></a>
+      <a class=half href=http://updates.html5rocks.com/><img src=/images/sponsors/google.gif alt="Google"></a>
+      <br>
+      <a class=small href=http://dharmafly.com#ff><img src=/images/sponsors/dharmafly.gif alt="Dharmafly, apps for change"></a>
+      <a class=small href=http://pusher.com><img src=/images/sponsors/pusher.gif alt="Pusher - Supercharge your app with realtime events"></a>
+      <a class=small href=http://uxebu.com><img src=/images/sponsors/uxebu.gif alt="uxebu - The Ajax and JavaScript experts"></a>
+      <a class=small href=http://www.guardian.co.uk/open-platform><img src=/images/sponsors/guardian.gif width=230 alt="The Guardian Open Platform is part of the Guardian's ongoing digital engagement strategy."></a>
+      <a class=small style="background: #1a1818;" href="http://www.ubelly.com?WT.mc_id=evn-c-gb--dca-F3-Fullfrontal"><img src=/images/sponsors/ubelly.gif width=230 alt="Ubelly - The unofficial official Microsoft blog for developers who love the web"></a>
+      <a class=small href=http://www.netmagazine.com><img src=/images/sponsors/netmag.gif alt=""></a>
+      <!-- <a class="small you" href=/sponsorship.html><img src=/images/you.png alt="Want to sponsor?"></a> -->
+          </section>
+    </div>
+  </div>
+
+  <div class=terms>
+    <h1><a href=http://leftlogic.com>Left Logic</a></h1>
+    <p>
+      Full Frontal is a one day JavaScript Conference in Brighton (<abbr>UK</abbr>) at the Duke of York's cinema,
+      organised by <a href=http://leftlogic.com>Left Logic</a>. 
+      Read the <a href=/terms>Terms &amp; Conditions</a> or view past years
+      <a href=http://2010.full-frontal.org>2010</a>, <a href=http://2009.full-frontal.org>2009</a>.
+  </div>
+</footer>
+
+<script src=js/twitterlib.js></script>
+<script src=js/main.js></script>
+<script>
+  // Google Analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1656750-25']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  // stops the transitions from applying whilst the page is rendering
+  document.documentElement.className += ' transition';  
+</script>

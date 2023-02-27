@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html class="noJS">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Frontal 2012 - JavaScript Conference</title>
+
+  <script>
+    document.documentElement.className = '';
+  </script>
+
+  <!--
+Hey there, nice for you to look under the hood. Remy here,
+your one and only curator of Full Frontal. Now, I had hoped
+to release a schedule at the same time as tickets because
+for the last four years (well, certainly the last three),
+I've tried to based my conference on content first, then
+match those speakers to the content. Indeed those speakers
+I've approached has been to speak on a specific topic I had
+in mind - so for that, I'm super excited. Since it's only
+June, it's a bit unfair to ask them for a title and abstract
+5 months in advance, so the schedule will go up here in the
+next month or so.
+
+If you're curious about how many checkins happened over the
+weekend to make sure I made the release date for that damn
+ticking clock, check this out:
+
+https://github.com/leftlogic/fullfrontal2012/graphs/code-frequency
+
+Yeah, so much for leaving time for making sure everything
+was ready. Anyway, I hope if you're reading this, you've
+grabbed your ticket already or maybe even joining us for
+one of the workshops (the mixed-bagged workshop is something
+I think will be really cool, and great to learn from).
+
+Anyway, I've gotta hit the sack, no doubt my son will wake
+me up in around 4-5 hours.
+
+Cheers,
+
+- @rem
+-->
+
+  <link rel="stylesheet" href="/fullfrontal.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/ie.css">
+    <script>
+      (function(g,b){function k(){var a=e.elements;return"string"==typeof a?a.split(" "):a}function l(a){var c={},f=a.createElement,b=a.createDocumentFragment,d=b();a.createElement=function(a){if(!e.shivMethods)return f(a);var b;b=c[a]?c[a].cloneNode():m.test(a)?(c[a]=f(a)).cloneNode():f(a);return b.canHaveChildren&&!n.test(a)?d.appendChild(b):b};a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+k().join().replace(/\w+/g,function(a){f(a);
+      d.createElement(a);return'c("'+a+'")'})+");return n}")(e,d)}function h(a){var c;if(a.documentShived)return a;if(e.shivCSS&&!i){c=a.createElement("p");var b=a.getElementsByTagName("head")[0]||a.documentElement;c.innerHTML="x<style>article,aside,figcaption,figure,footer,header,hgroup,nav,section{display:block}mark{background:#FF0;color:#000}</style>";c=!!b.insertBefore(c.lastChild,b.firstChild)}j||(c=!l(a));if(c)a.documentShived=c;return a}var d=g.html5||{},n=/^<|^(?:button|form|map|select|textarea|object|iframe|option|optgroup)$/i,
+      m=/^<|^(?:a|b|button|code|div|fieldset|form|h1|h2|h3|h4|h5|h6|i|iframe|img|input|label|li|link|ol|option|p|param|q|script|select|span|strong|style|table|tbody|td|textarea|tfoot|th|thead|tr|ul)$/i,i,j;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>";i="hidden"in a;if(!(a=1==a.childNodes.length))a:{try{b.createElement("a")}catch(c){a=!0;break a}a=b.createDocumentFragment();a="undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}j=
+      a})();var e={elements:d.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:!1!==d.shivCSS,shivMethods:!1!==d.shivMethods,type:"default",shivDocument:h};g.html5=e;h(b)})(this,document);
+    </script>
+  <![endif]-->
+
+</head>
+
+<!--[if IE 8]><body class="ie"><![endif]-->
+<!--[if gt IE 8]><body><![endif]-->
+<!--[if !IE]><!-->
+
+<body class="">
+  <!--<![endif]-->
+  <div id="dressing-gown">
+
+    <header>
+      <div class="ponch"></div>
+      <div class="chips"></div>
+      <!-- know your TV cop characters -->
+      <div class="wrapper">
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#speakers">Speakers</a>
+            </li>
+            <li>
+              <a href="#schedule">Schedule</a>
+            </li>
+            <li>
+              <a href="#workshops">Workshops</a>
+            </li>
+            <li>
+              <a href="#locations">Locations</a>
+            </li>
+            <!-- <li><a href="#fringe">Fringe</a></li> -->
+            <li>
+              <a href="#sponsors">Sponsors</a>
+            </li>
+            <li class="tickets">
+              <a class="pullout" href="/tickets#tickets">Tickets</a>
+            </li>
+          </ul>
+
+          <span id="show-menu">Pull down to show menu&hellip;</span>
+        </nav>
+
+        <img class="logo" src="/images/logo.png" width="140" height="130" alt="Full Frontal">
+
+
+        <h1>
+          <time datetime="2012-11-09T09:00">09/11/12</time>
+          <span>Full Frontal 2012
+            <span hidden>
+              <!-- Force the above line to justify -->
+              It's the best JavaScript conference ever, justfiyable hackable
+            </span>
+            <span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="wrapper">
+
+        <p class="lede vevent">
+          <strong class="summary">Full Frontal 2012</strong> is a one day
+          <br class="superflous-br">
+          <strong>JavaScript Conference</strong>
+          <br>at the
+          <span class="location">Duke of York&rsquo;s Picturehouse
+            <br class="extra-br">in Brighton, UK </span>
+          <br>on the
+          <time class="dtstart" title="2012-11-09T09:00" datetime="2012-11-09T09:00">
+            <strong>9th November 2012</strong>
+          </time>
+        </p>
+
+        <hr> <article id="schedule">
+  <h2><span>Schedule</span></h2>
+
+  <div class="schedule-container">
+  <div class="schedule-half">
+    <ol class="schedule">
+      
+      <li class="schedule-heading">
+        <h3>Morning</h3>
+      <li>
+
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T09:00" datetime="2012-11-09T09:00">09:00</time> &mdash;
+          <time class="dtend" title="2012-11-09T09:40" datetime="2012-11-09T09:40">09:40</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Registration</span>
+      </li>
+      
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T09:40" datetime="2012-11-09T09:40">09:40</time> &mdash;
+          <time class="dtend" title="2012-11-09T09:50" datetime="2012-11-09T09:50">09:50</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Opening Remarks</span>
+      </li>
+      
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T09:50" datetime="2012-11-09T09:50">09:50</time> &mdash;
+          <time class="dtend" title="2012-11-09T10:30" datetime="2012-11-09T10:30">10:30</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/james#james" class="pullout summary">All you need is &lt;body/&gt;</a>
+      </li>
+      
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T10:30" datetime="2012-11-09T10:30">10:30</time> &mdash;
+          <time class="dtend" title="2012-11-09T11:10" datetime="2012-11-09T11:10">11:10</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/john#john" class="pullout summary">Is HTML relevent in the era of web apps?</a>
+      </li>
+      
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T11:10" datetime="2012-11-09T11:10">11:10</time> &mdash;
+          <time class="dtend" title="2012-11-09T11:40" datetime="2012-11-09T11:40">11:40</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Break (30mins)</span>
+      </li>
+
+    </ol>
+      
+    <ol class="schedule">
+
+      <li class="schedule-heading">
+        <h3>Midday</h3>
+      <li>
+
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T11:40" datetime="2012-11-09T11:40">11:40</time> &mdash;
+          <time class="dtend" title="2012-11-09T12:20" datetime="2012-11-09T12:20">12:20</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/andrew#andrew" class="pullout summary">Offline Rules</a>
+      </li>
+      
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T12:20" datetime="2012-11-09T12:20">12:20</time> &mdash;
+          <time class="dtend" title="2012-11-09T13:00" datetime="2012-11-09T13:00">13:00</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/anna#anna" class="pullout summary">Exploring the game console browser landscape</a>
+      </li>
+      
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T13:00" datetime="2012-11-09T13:00">13:00</time> &mdash;
+          <time class="dtend" title="2012-11-09T14:30" datetime="2012-11-09T14:30">14:30</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Lunch (90mins)</span>
+      </li>
+
+    </ol>
+  </div>
+
+  <div class="schedule-half">
+    <ol class="schedule">
+
+      <li class="schedule-heading">
+        <h3>Afternoon</h3>
+      <li>
+
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T14:30" datetime="2012-11-09T14:30">14:30</time> &mdash;
+          <time class="dtend" title="2012-11-09T15:10" datetime="2012-11-09T15:10">15:10</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/paul#paul" class="pullout summary">Building Web Apps of the future. Tomorrow, today and yesterday.</a>
+      </li>
+      
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T15:10" datetime="2012-11-09T15:10">15:10</time> &mdash;
+          <time class="dtend" title="2012-11-09T15:50" datetime="2012-11-09T15:50">15:50</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/rebecca#rebecca" class="pullout summary">Writing Testable JavaScript</a>
+      </li>
+      
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T15:50" datetime="2012-11-09T15:50">15:50</time> &mdash;
+          <time class="dtend" title="2012-11-09T16:20" datetime="2012-11-09T16:20">16:20</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Break (30mins)</span>
+      </li>
+
+    </ol>
+      
+    <ol class="schedule">
+
+      <li class="schedule-heading">
+        <h3>Evening</h3>
+      <li>
+
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T16:20" datetime="2012-11-09T16:20">16:20</time> &mdash;
+          <time class="dtend" title="2012-11-09T17:00" datetime="2012-11-09T17:00">17:00</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/steven#steven" class="pullout summary">Making things with Maths</a>
+      </li>
+      
+      <li class="vevent talk">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T17:00" datetime="2012-11-09T17:00">17:00</time> &mdash;
+          <time class="dtend" title="2012-11-09T17:40" datetime="2012-11-09T17:40">17:40</time>
+          <span class="next">Up Next</span>
+        </span>
+        <a href="/speaker/chris#chris" class="pullout summary">Tales of Suckage and Awesomeness</a>
+      </li>
+
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T17:40" datetime="2012-11-09T17:40">17:40</time> &mdash;
+          <time class="dtend" title="2012-11-09T18:00" datetime="2012-11-09T18:00">18:00</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">Closing Remarks</span>
+      </li>
+
+      <li class="vevent">
+        <div class="done">Finished</div>
+        <span class="time">
+          <time class="dtstart" title="2012-11-09T19:00" datetime="2012-11-09T19:00">19:00</time> &mdash;
+          <time class="dtend" title="2012-11-09T23:59" datetime="2012-11-09T23:59">Late</time>
+          <span class="next">Up Next</span>
+        </span>
+        <span class="summary">After Party</span>
+      </li>
+
+    </ol>
+  </div>
+  </div>
+
+</article>
+
+
+        <hr> <article id="speakers">
+  <h2><span>Speakers</span></h2>
+
+  <section class="speaker">
+    <h3>Paul Kinlan <a href="https://twitter.com/Paul_Kinlan" class="twitter">Paul_Kinlan</a></h3>
+    <div class="details pullout" data-href="/speaker/paul#paul" data-hash="paul">
+      <img title="" src="/images/speakers/paul.png">
+      <div class="blurb">
+        <p>Developer Advocate @ Google on Chrome. Mr <a href="http://webintents.org">Web Intents</a>. Developer of many techie things including Twollo, Twe2, Topicala, Ahoyo and FriendDeck.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>Rebecca Murphey <a href="https://twitter.com/rmurphey" class="twitter">rmurphey</a></h3>
+    <div class="details pullout" data-href="/speaker/rebecca#rebecca" data-hash="rebecca">
+      <img title="" src="/images/speakers/rebecca.png">
+      <div class="blurb">
+        <p>Senior JS dev at <a href="http://bocoup.com/">Bocoup</a>, client-side architecture fanatic, co-host of the long-lost <a href="http://yayquery.com/">yayQuery</a> podcast</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>Chris Wilson <a href="https://twitter.com/cwilso" class="twitter">cwilso</a></h3>
+    <div class="details pullout" data-href="/speaker/chris#chris" data-hash="chris">
+      <img title="" src="/images/speakers/chris.png">
+      <div class="blurb">
+        <p>Chris Wilson has worked on NCSA Mosaic, IE and now Chrome as an Open Web advocate.  He loves enabling awesome user experiences on the web.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>Steven Wittens <a href="https://twitter.com/unconed" class="twitter">unconed</a></h3>
+    <div class="details pullout" data-href="/speaker/steven#steven" data-hash="steven">
+      <img title="" src="/images/speakers/steven.png">
+      <div class="blurb">
+        <p><a href="http://acko.net">Steven Wittens</a> is a wannabe demo scener, recreational mathematician and maker of webs front and back who desperately wants the browser to become a real boy already.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>John Allsopp <a href="https://twitter.com/johnallsopp" class="twitter">johnallsopp</a></h3>
+    <div class="details pullout" data-href="/speaker/john#john" data-hash="john">
+      <img title="" src="/images/speakers/john.png">
+      <div class="blurb">
+        <p><a href="http://johnfallsopp.com/">John</a> has been doing things to the web since before many of you were born. This is not necessarily a good thing.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>Andrew Betts <a href="https://twitter.com/triblondon" class="twitter">triblondon</a></h3>
+    <div class="details pullout" data-href="/speaker/andrew#andrew" data-hash="andrew">
+      <img title="" src="/images/speakers/andrew.png">
+      <div class="blurb">
+        <p>Founder of <a href="http://assanka.net">Assanka</a>, the company acquired earlier this year by the FT, Andrew now heads up FT Labs (the team that builds some of the world&#x27;s finest HTML5 web apps) and is co-chair of the W3C &#x27;Fixing appcache&#x27; community group.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>James Pearce <a href="https://twitter.com/jamespearce" class="twitter">jamespearce</a></h3>
+    <div class="details pullout" data-href="/speaker/james#james" data-hash="james">
+      <img title="Robert Nyman" src="/images/speakers/james.png">
+      <div class="blurb">
+        <p>Head of Mobile Developer Relations at Facebook, a developer and writer with a special passion for mobile and exploring its untapped potential.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+  <section class="speaker">
+    <h3>Anna Debenham <a href="https://twitter.com/anna_debenham" class="twitter">anna_debenham</a></h3>
+    <div class="details pullout" data-href="/speaker/anna#anna" data-hash="anna">
+      <img title="Geri Coady" src="/images/speakers/anna.png">
+      <div class="blurb">
+        <p>Anna is a freelance front end developer based in Brighton. She mostly works on projects in education and tweets a lot about Adventure Time.</p>
+  
+      </div>
+    </div>
+  
+  </section>
+
+</article>
+
+
+        <hr> <article id="workshops">
+  <h2><span>Workshops</span></h2>
+
+    <section class="workshop">
+      <h3>John Allsopp <a class="title pullout" href="/workshop/html5#html5">HTML5, beyond markup</a></h3>
+      <a class="title pullout" href="/workshop/html5#html5"><div class="details">
+        <img title="Drew McLellan" src="/images/speakers/john.png">
+        <div class="sold-out"><span class="button">Sold Out</span></div>
+        <div class="blurb">
+          <p>In this full day workshop, John Allsopp takes you beyond the header and footer, to focus on some of the powerful, but surprisingly easy to use, features of the next generation of HTML</p>
+  
+        </div>
+      </div></a>
+    </section>
+    <section class="workshop">
+      <h3>Remy Sharp <a class="title pullout" href="/workshop/mobile#mobile">Mobile Web Apps</a></h3>
+      <a class="title pullout" href="/workshop/mobile#mobile"><div class="details">
+        <img title="" src="/images/speakers/remy.png">
+        <div class="sold-out"><span class="button">Sold Out</span></div>
+        <div class="blurb">
+          <p>This day long workshop will be a mix of introducing the latest technology &amp; tricks on the mobile device and hands on practical exercises where you&#x27;ll get to play with what you&#x27;re learning.</p>
+  
+        </div>
+      </div></a>
+    </section>
+    <section class="workshop">
+      <h3>Archibald, Murphey, Sharp <a class="title pullout" href="/workshop/tooling#tooling">Tooling Tutorials</a></h3>
+      <a class="title pullout" href="/workshop/tooling#tooling"><div class="details">
+        <img title="" src="/images/speakers/tooling.gif">
+        <div class="sold-out"><span class="button">Sold Out</span></div>
+        <div class="blurb">
+          <p>This workshop is the pick and mix of workshops. Three trainers will each be running two hands on seminars convering: Git, RequireJS, debugging, SASS, test and automation, build process</p>
+  
+        </div>
+      </div></a>
+    </section>
+</article>
+
+
+        <hr> <article id="locations">
+  <h2><span>Locations</span></h2>
+
+  <section class="locations">
+    <h3>Conference</h3>
+    <ul>
+      <li class="venue primary-venue" data-latlng="50.8336812,-0.1388816">
+        <span class="address">Preston Circus, BN1 4BA</span>
+        <a href="http://dukeofyorkscinema.co.uk/"><span class="bullet">A.</span>Duke of York's Picturehouse</a>
+        <p class="details">
+          Full Frontal JavaScript Conference is being held at the historic
+          Duke of York's Picturehouse in Brighton. It is centrally located on Preston Circus.
+        </p>
+      </li>
+    </ul>
+
+    <h3>Workshops</h3>
+    <ul>
+      <li class="venue primary-venue" data-latlng="50.825828322287116, -0.13845831155776978">
+        <span class="address">28 Kensington Street, BN1 4AJ</span>
+        <a href="http://goo.gl/maps/GTYX"><span class="bullet">B.</span>Lighthouse</a>
+        <p class="details">
+          If you've signed up to one of our workshops, this is where they're run.
+        </p>
+      </li>
+    </ul>
+
+
+    <h3>(Unofficial) Pre Party</h3>
+    <ul>
+      <li class="venue primary-venue" data-latlng="50.8254504924097, -0.13727009296417236">
+        <span class="address">101 North Road, BN1 1YE</span>
+        <a href="http://goo.gl/maps/6FH8"><span class="bullet">C.</span>Fountain Head</a>
+        <p class="details">
+          We've reserved some tables and spots, so come down from 7pm onwards and say 'hi' to your fellow <em>Full-Frontal-goer</em>!
+        </p>
+      </li>
+    </ul>
+
+    <h3>After Party</h3>
+    <ul>
+      <li class="venue primary-venue" data-latlng="50.82181097001707,-0.14180302619934082">
+        <span class="address">Preston Circus, BN1 4BA</span>
+        <a href="http://goo.gl/maps/xe61"><span class="bullet">D.</span>The Loft</a>
+        <p class="details">
+          Please join us at the Full Frontal After Party at The Loft from 7pm until late
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <div id="map"></div>
+
+  <section class="locations">
+    <h3>Hotels</h3>
+    <ul>
+       <li class="venue -venue" data-latlng=",">
+         <span class="address"></span>
+     
+         <span class="name"><span class="bullet">.</span></span>
+     
+         <div class="details">
+           
+         </div>
+       </li>
+    </ul>
+
+    <h3>Food &amp Drink</h3>
+    <ul>
+        <li class="venue -venue" data-latlng=",">
+          <span class="address"></span>
+      
+          <span class="name"><span class="bullet">.</span></span>
+      
+          <div class="details">
+            
+          </div>
+        </li>
+    </ul>
+  </section>
+
+</article>
+
+
+        <hr> <article id="sponsors">
+  <h2><span>Sponsors</span></h2>
+
+  <h3>Full Monty Sponsors</h3>
+
+  <div class="full-monty-wrapper">
+    <section class="full-monty">
+      <a class="sponsor" href="http://www.webapplicationsuk.com/"><img src="/images/sponsors/web-apps-uk.png" alt="Web Applications UK"></a>
+      <div class="blurb">
+        <p>Web Applications UK is a successful I.T. company based in Manchester, specialising in software for
+  the travel industry. As a Microsoft Gold Partner we provide reservation systems for leading travel
+  companies and are well equipped to handle a full range of IT requirements.</p>
+
+  <p>Our main focus is providing a great place to work. Presenting our I.T. professionals with continuous
+  development and a generous training budget means they’re constantly improving towards their full
+  potential. We’re always on the lookout for talented Software Engineers to join our expanding team,
+  so apply now at <a href="mailto:recruitment@webappuk.com">recruitment@webappuk.com</a></p>
+      </div>
+    </section>
+
+      <section class="full-monty">
+      <a class="sponsor" href="http://html.adobe.com/"><img src="/images/sponsors/adobe.png" alt="Adobe"></a>
+      <div class="blurb">
+        <p>Whether it's a smartphone or tablet app, a game, a video, a digital magazine, a website, or an online experience, chances are that it was touched by Adobe technology.</p>
+        <p>Our tools and services enable our customers to create groundbreaking digital content, deploy it across media and devices, and then continually measure and optimize it based on user data.</p>
+      </div>
+    </section>
+  </div>
+
+
+  <h3>Half Monty Sponsors</h3>
+
+  <a class="sponsor half" href="http://google.com"><img src="/images/sponsors/google.png" alt="Google"></a>
+  <a class="sponsor half" href="http://mozilla.org"><img src="/images/sponsors/mozilla.png" alt="Mozilla Developer Network"></a>
+  <a class="sponsor half" href="http://www.brandwatch.com/2012/06/brandwatch-is-looking-for-a-senior-javascript-developer/"><img src="/images/sponsors/brandwatch.png" alt="Brandwatch"></a>
+  <a class="sponsor half" href="http://www.rim.com"><img src="/images/sponsors/blackberry.png" alt="Blackberry"></a>
+
+
+  <h3>Small Monty Sponsors</h3>
+
+  <a class="sponsor small" href="http://www.bazaarvoice.com/londondev"><img src="/images/sponsors/bazaarvoice.png" alt="Bazaar Voice"></a>
+  <a class="sponsor small" href="http://dharmafly.com/"><img src="/images/sponsors/dharmafly.png" alt="Dharmafly"></a>
+  <a class="sponsor small" href="http://p.ota.to/"><img src="/images/sponsors/potato.png" alt="Potato London"></a>
+  <a class="sponsor small" href="https://www.yammer.com"><img src="/images/sponsors/yammer.png" alt="Yammer"></a>
+
+
+</article>
+
+        <hr>
+        <article class="comingsoon yeahpointlessiknow">
+          <h2>
+            <span>Coming soon</span>
+          </h2>
+        </article>
+      </div>
+    </div>
+
+    <footer>
+      <div class="date-twitter">
+        <time class="date" datetime="2012-11-09T09:00">
+          <strong>09
+            <span>/</span>11
+            <span>/</span>12</strong>
+        </time>
+        <a class="twitter" href="https://twitter.com/fullfrontalconf" title="Follow Full Frontal on Twitter">@fullfrontalconf</a>
+      </div>
+      <p class="previous">
+        Previous years
+        <br>
+        <a href="http://2011.full-frontal.org/">2011</a>,
+        <a href="http://2010.full-frontal.org/">2010</a>,
+        <a href="http://2009.full-frontal.org/">2009</a>
+      </p>
+      <a class="left-logic" href="http://leftlogic.com">Left Logic</a>
+    </footer>
+
+  </div>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/fullfrontal.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?&amp;sensor=false"></script>
+  <script src="https://maps.stamen.com/js/tile.stamen.js"></script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1656750-30']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <script>
+    var now = +new Date;
+    if (now < new Date('2012-11-06T08:00') || now >= new Date('2012-11-09T17:35')) {
+      setTimeout(function () {
+        if (!pageYOffset && (!location.hash || location.hash === '#?') && document.getElementById('show-menu')) {
+          if (!matchMedia('@media screen and (min-width: 820px)').matches) {
+            document.getElementById('show-menu').scrollIntoView();
+          } else {
+          }
+        }
+      }, 100);
+    }
+  </script>
+  <?php
+if ($dummy) { include('dummy.html'); }
+?>
+</body>
+
+</html>
